@@ -5,5 +5,6 @@
 <style scoped lang="scss">
 div {
   color: $font-color;
+  text-decoration: dashed;
 }
 </style>
