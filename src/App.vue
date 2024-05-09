@@ -1,3 +1,8 @@
+<script lang="ts" setup>
+let a: string = 'text'
+console.log(a)
+</script>
+
 <template>
   <div>app</div>
 </template>
