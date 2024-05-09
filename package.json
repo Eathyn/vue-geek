@@ -8,16 +8,27 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "prepare": "husky",
-    "lint:lint-staged": "lint-staged"
+    "lint:lint-staged": "lint-staged",
+    "cz": "cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
   },
   "dependencies": {
     "vue": "^3.4.21"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@eslint/js": "8.57.0",
     "@types/node": "^20.12.10",
     "@vitejs/plugin-vue": "^5.0.4",
     "browserslist": "^4.23.0",
+    "commitizen": "^4.3.0",
+    "cz-git": "^1.9.1",
+    "czg": "^1.9.1",
     "eslint": "8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
