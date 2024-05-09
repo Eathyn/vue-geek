@@ -8,6 +8,11 @@ import path from 'path'
 const variablePath = normalizePath(path.resolve('./src/styles/variables.scss'))
 
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, './src'),
+    },
+  },
   plugins: [vue()],
   css: {
     preprocessorOptions: {
