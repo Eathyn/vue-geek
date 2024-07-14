@@ -9,7 +9,7 @@ const staticRoutes: RouteRecordRaw[] = [
   {
     path: LOGIN_URL,
     name: 'login',
-    component: () => import('@/view/login/index.vue'),
+    component: () => import('@/views/login/index.vue'),
     meta: {
       title: '登录',
     },
@@ -17,7 +17,7 @@ const staticRoutes: RouteRecordRaw[] = [
   {
     path: '/layout',
     name: 'layout',
-    component: () => import('@/layout/index.vue'),
+    component: () => import('@/layouts/index.vue'),
     redirect: HOME_URL,
     children: [],
   },
